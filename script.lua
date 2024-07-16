@@ -9,7 +9,9 @@ for _, plugin in pairs(config.plugins) do
 
     mainActionWheelPage:newAction()
         :setItem(plugin.actionWheelPage.item)
-        :setTitle("Navigate to " .. plugin.name .. " plugin page")
+        :setTitle("Navigate to plugin page")
         :setOnLeftClick(visitPage)
         :setOnRightClick(visitPage)
 end
+
+action_wheel:setPage(mainActionWheelPage)
